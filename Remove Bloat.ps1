@@ -1,4 +1,7 @@
-# List of Bloats
+# This script is based on Alex Hirsch W4RH4WK & Sycnex, my script will not turnoff the telemetry
+# If you use it make sure to read what I remove
+
+# List of Bloat
 
 $Bloatware = @(
 
