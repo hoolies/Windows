@@ -1,0 +1,8 @@
+# Enter a command
+$command = Read-Host "Type the command you want to use"
+$command = Invoke-Expression $command
+# From Text to CS
+$csv = $command | ForEach-Object -Process { $_ -replace '\s{2,}',',' }
+
+# From CSV to Object for further manipulation
+$c2o = $csv | ConvertFrom-Csv
