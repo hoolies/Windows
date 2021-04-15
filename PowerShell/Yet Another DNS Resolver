@@ -1,0 +1,26 @@
+# Yet another DNS Resolver
+
+# Asking for the domain
+$Domain = Read-Host -Prompt 'Enter the Domain name'
+
+# Setting up the records
+$Records = @(
+
+"MX"
+"A"
+"AAAA"
+"TXT"
+"CNAME"
+"PTR"
+"NS"
+
+)
+
+# Creating the Loop
+foreach ($Record in $Records) {
+Resolve-DnsName -Name $Domain -Type $Record | Where-Object {$_.Type -like $Record} | Select-Object -Property Name,Type,Address,Exchange,Text,PrimaryServer,Server,TTL
+
+}
+
+
+Pause
