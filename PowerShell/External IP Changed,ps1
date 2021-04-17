@@ -3,7 +3,7 @@
 # When the IP changes will send an email to the receipient.
 
 # Set the path where the files will be saved
-$path = /home/
+$path = "/home/"
 
 
 curl ifconfig.me > $path/eip.txt
@@ -27,7 +27,7 @@ $To = “otheruser@gmail.com”
 
 $Subject = “This is your new ip $eip”
 
-$Body = “<h1>Your isp is $eip </h1><h3>It really works</h3>”
+$Body = “<h1>Your new External IP is $eip </h1>”
 
 $SMTPServer = “smtp.gmail.com”
 
