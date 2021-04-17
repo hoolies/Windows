@@ -1,8 +1,5 @@
-# Type the credentials
-$cred = Get-Credentials
-
 # Connect to Office 365 with the admin credentials
-Connect-MsolService -credential $cred
+Connect-MsolService
 
 # Reads the username
 $user = Read-Host 'Enter the user that the password will not expire'
