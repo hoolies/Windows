@@ -5,8 +5,7 @@
 # Set the path where the files will be saved
 $path = "/home/"
 
-
-curl ifconfig.me > $path/eip.txt
+(Invoke-WebRequest ifconfig.me/ip).Content > $path/eip.txt
 $eip = Get-Content $path/eip.txt
 $old = Get-Content $path/old.txt
 
