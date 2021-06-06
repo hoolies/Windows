@@ -1,5 +1,5 @@
-# If you external ip is not static and you do not wnat to use opendns or similar service
-# This script is ment to be attached in a schedule task and run every 30 min or so
+# If your external ip is not static and you do not wish to use opendns or similar service
+# This script is ment to be used in a schedule task and run every 15 min or so
 # When the IP changes will send an email to the receipient.
 
 # Set the path where the files will be saved
